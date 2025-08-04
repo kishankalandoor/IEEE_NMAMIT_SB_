@@ -885,7 +885,43 @@ section,
 .section-title p {
   margin-bottom: 0;
 }
+/* Steps to Join IEEE Section Styles */
+#steps .section-title h2 {
+  font-weight: 700;
+  color: #0074cc;
+}
 
+.steps-list .list-group-item {
+  font-size: 1.08rem;
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  transition: background 0.2s;
+}
+.steps-list .list-group-item:last-child {
+  border-bottom: none;
+}
+.steps-list .list-group-item strong {
+  color: #0074cc;
+}
+.steps-list .list-group-item a {
+  color: #0074cc;
+  text-decoration: underline;
+}
+.steps-list .list-group-item:hover {
+  background: #f5faff;
+}
+
+@media (max-width: 576px) {
+  #steps .section-title h2 {
+    font-size: 1.5rem;
+  }
+  .steps-list .list-group-item {
+    font-size: 0.98rem;
+    padding: 0.75rem 1rem;
+  }
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
