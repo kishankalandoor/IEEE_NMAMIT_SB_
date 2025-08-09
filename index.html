@@ -182,6 +182,34 @@
       transition: all 0.3s ease;
     }
 
+    .event-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.event-media:hover {
+  transform: translateY(-5px);
+}
+
+.event-media img,
+.event-media video {
+  width: 100%;
+  height: 400px;  /* Increased height for portrait view */
+  object-fit: cover;
+  aspect-ratio: 2/3;  /* Portrait aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .event-media img,
+  .event-media video {
+    height: 350px;  /* Slightly shorter on mobile but still portrait */
+  }
+}
+
     /* Mobile Navigation */
     @media (max-width: 992px) {
       .navbar-nav-ieee {
@@ -342,7 +370,9 @@
               <li><a href="#services">Events</a></li>
               <li><a href="#pricing">Membership</a></li>
               <li><a href="#team">Team</a></li>
+               <li><a href="#events">Events</a></li>
               <li><a href="#faq">FAQ</a></li>
+              <li><a href="#achievements">Achievements</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -367,7 +397,7 @@
                     <a href="https://www.ieee.org/" class="btn btn-outline">Learn More</a>
 
               <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Become a member</a>
+                <a href="#steps" class="btn btn-primary">Become a member</a>
                 <a href="#services" class="btn btn-outline">Our Services</a>
               </div>
               <div class="hero-stats">
@@ -522,7 +552,7 @@
     <div class="row gy-4">
       <div class="col-lg-5">
         <div class="profile d-flex align-items-center gap-3">
-          <img src="assets/img/person/download.webp" alt="Branch Counselor" class="profile-image">
+          <img src="vasu.jpeg" alt="Branch Counselor" class="profile-image">
           <div>
             <h4 class="profile-name">Dr.Vasudev Acharya </h4>
             <p class="profile-position">Branch Counselor</p>
@@ -1114,7 +1144,7 @@
       <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
         <div class="team-card">
           <div class="profile-image">
-            <img src="assets/img/person/download.webp"style="width: 100%; border-radius: 12px;" class="img-fluid" alt="Branch Counselor" loading="lazy">
+            <img src="vasu.jpeg"style="width: 100%; border-radius: 12px;" class="img-fluid" alt="Branch Counselor" loading="lazy">
             <div class="role-badge">Faculty Advisor</div>
             <div class="social-icons">
               <a href="mailto:vasudeva77@ieee.org" class="text-primary fw-bold">
@@ -1153,7 +1183,7 @@
       <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
         <div class="team-card">
           <div class="profile-image">
-            <img src="assets/img/person/person-m-2.webp"style="width: 100%; border-radius: 12px;" class="img-fluid" alt="Vice Chair" loading="lazy">
+            <img src="pra.jpg"style="width: 100%; border-radius: 12px;" class="img-fluid" alt="Vice Chair" loading="lazy">
             <div class="role-badge">Leadership</div>
             <div class="social-icons">
               <a href="#"><i class="bi bi-envelope"></i></a>
@@ -1191,7 +1221,7 @@
       <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
         <div class="team-card">
           <div class="profile-image">
-            <img src="assets/img/person/person-m-2.webp" style="width: 100%; border-radius: 12px;"class="img-fluid" alt="Treasurer" loading="lazy">
+            <img src="asher.jpeg" style="width: 100%; border-radius: 12px;"class="img-fluid" alt="Treasurer" loading="lazy">
             <div class="role-badge">Core Committee</div>
             <div class="social-icons">
               <a href="#"><i class="bi bi-envelope"></i></a>
@@ -1229,7 +1259,7 @@
       <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
         <div class="team-card">
           <div class="profile-image">
-            <img src="assets/img/person/person-f-3.webp" style="width: 100%; border-radius: 12px;"class="img-fluid" alt="Membership Chair" loading="lazy">
+            <img src="deva.jpeg" style="width: 100%; border-radius: 12px;"class="img-fluid" alt="Membership Chair" loading="lazy">
             <div class="role-badge">Committee Head</div>
             <div class="social-icons">
               <a href="#"><i class="bi bi-envelope"></i></a>
@@ -1248,7 +1278,7 @@
       <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
         <div class="team-card">
           <div class="profile-image">
-            <img src="assets/img/person/person-m-2.webp" style="width: 100%; border-radius: 12px;"class="img-fluid" alt="IEEE Member" loading="lazy">
+            <img src="" style="width: 100%; border-radius: 12px;"class="img-fluid" alt="IEEE Member" loading="lazy">
             <div class="role-badge">Active Member</div>
             <div class="social-icons">
               <a href="#"><i class="bi bi-envelope"></i></a>
@@ -1266,7 +1296,7 @@
       <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="550">
         <div class="team-card">
           <div class="profile-image">
-            <img src="assets/img/person/person-f-3.webp" style="width: 100%; border-radius: 12px;" class="img-fluid" alt="IEEE Member" loading="lazy">
+            <img src="" style="width: 100%; border-radius: 12px;" class="img-fluid" alt="IEEE Member" loading="lazy">
             <div class="role-badge">Active Member</div>
             <div class="social-icons">
               <a href="#"><i class="bi bi-envelope"></i></a>
@@ -1284,7 +1314,7 @@
       <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
         <div class="team-card">
           <div class="profile-image">
-            <img src="assets/img/person/person-f-5.webp" style="width: 100%; border-radius: 12px;"class="img-fluid" alt="IEEE Member" loading="lazy">
+            <img src="" style="width: 100%; border-radius: 12px;"class="img-fluid" alt="IEEE Member" loading="lazy">
             <div class="role-badge">Active Member</div>
             <div class="social-icons">
               <a href="#"><i class="bi bi-envelope"></i></a>
@@ -1302,9 +1332,266 @@
     </div>
 </section><!-- /Team Section -->
 
+       <!-- Achievements Section -->
+<section id="achievements" class="events section py-5">
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2>Our Achievements & Proud Students</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4">
+      <!-- Achievement 1 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="event-media">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQGtGkCmmKeO-w/feedshare-shrink_800/B56ZfQ75GJHUAg-/0/1751557052915?e=1757548800&v=beta&t=lh3WK862UaCl4YDJrk1dk3Hz_HEQNEOsKbxMrQvqcl0" class="img-fluid rounded shadow" alt="IEEE Achievement 1">
+        </div>
+      </div>
+
+      <!-- Achievement 2 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="event-media">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQE1cVRyx29mFw/feedshare-shrink_800/B56ZRlip2mHwAk-/0/1736870442041?e=1757548800&v=beta&t=cxqKOiCrWvH_OohHSp0uR41Yd1P6OzR0HyA0_vBB-TU" class="img-fluid rounded shadow" alt="IEEE Achievement 2">
+        </div>
+      </div>
+
+      <!-- Achievement 3 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQFhqf_3Q3RRPQ/feedshare-shrink_2048_1536/B56ZRlip2zGsAs-/0/1736870484872?e=1757548800&v=beta&t=qy9jeXg6qVNFxVFOVCWKDNnjuf7PvQTJR8S26pqYl5w" class="img-fluid rounded shadow" alt="IEEE Achievement 3">
+        </div>
+      </div>
+
+      <!-- Achievement 4 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="event-media">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQErJOnJ7L4BhQ/feedshare-shrink_2048_1536/B56Zg4nLlbHkA4-/0/1753296453066?e=1757548800&v=beta&t=cZqtLnyVkhZLCeiTIHE7xE6ahvTRzcw4xcLZ_ULWbW4" class="img-fluid rounded shadow" alt="IEEE Achievement 4">
+        </div>
+      </div>
+
+      <!-- Achievement 5 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="event-media">
+          <img src="11.jpeg" class="img-fluid rounded shadow" alt="IEEE Achievement 5">
+        </div>
+      </div>
+
+      <!-- Achievement 6 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="event-media">
+          <img src="12.jpeg" class="img-fluid rounded shadow" alt="IEEE Achievement 6">
+        </div>
+      </div>
+
+      <!-- Achievement 7 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="13.jpeg" class="img-fluid rounded shadow" alt="IEEE Achievement 7">
+        </div>
+      </div>
+
+      <!-- Achievement 8 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="event-media">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQEZqFy9OXuQHA/feedshare-shrink_800/feedshare-shrink_800/0/1733666382839?e=1757548800&v=beta&t=basvVsWCKXsoZy7VZlG3VBsfmaqehXhhlNqv33CXI94" class="img-fluid rounded shadow" alt="IEEE Achievement 8">
+        </div>
+      </div>
+
+      <!-- Achievement 9 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="event-media">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQH991mJlKIHKg/feedshare-shrink_2048_1536/B56ZboKlHtH4As-/0/1747651811620?e=1757548800&v=beta&t=xiGPMa9XlYKqd1E6jE6b79UXn7fhSlHJ3UEFfwwWT_8" class="img-fluid rounded shadow" alt="IEEE Achievement 9">
+        </div>
+      </div>
+
+      <!-- Achievement 10 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="event-media">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQG890hZhfOaIQ/feedshare-shrink_2048_1536/B56ZbfgYLjGgAo-/0/1747506920850?e=1757548800&v=beta&t=1UaqAeau1iexBkb2EcmFoO6YhuRdoRyovCSzIX26jnU" class="img-fluid rounded shadow" alt="IEEE Achievement 10">
+        </div>
+      </div>
+
+      <!-- Achievement 11 -->
+       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="14.jpeg" class="img-fluid rounded shadow" alt="IEEE Achievement 8">
+        </div>
+      </div>
+
+
+      <!-- Achievement 12 -->
+       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="15.jpeg" class="img-fluid rounded shadow" alt="IEEE Achievement 7">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+    <!-- Events Section -->
+<!-- Events Section -->
+<section id="events" class="events section py-5">
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2>Our Events</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4">
+      <!-- Event 1 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="event-media">
+          <img src="ieeeday2024.jpeg" class="img-fluid rounded shadow" alt="IEEE Day">
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="event-media">
+          <img src="tt.jpeg" class="img-fluid rounded shadow" alt="Tech Triad">
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="sparkhunt.jpeg" class="img-fluid rounded shadow" alt="Spark Hunt">
+        </div>
+      </div>
+
+
+      <!-- Event 3 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQH_eyOV4vfcBQ/feedshare-shrink_800/B56ZbIclVjGoAg-/0/1747119664044?e=1757548800&v=beta&t=Mq5pIRdB2_lt1Mr5wv5A4mTYWeSlZ3UXnSNxqHV664k" class="img-fluid rounded shadow" alt="Spark Hunt">
+        </div>
+      </div>
+
+
+      <!-- Event 4 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="event-media">
+          <img src="th.png" class="img-fluid rounded shadow" alt="Tech Event">
+        </div>
+      </div>
+
+      <!-- Video 1 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="event-media">
+          <video autoplay muted loop playsinline class="img-fluid rounded shadow">
+            <source src="th.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Event 5 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="event-media">
+          <img src="grss.jpg" class="img-fluid rounded shadow" alt="GRSS Event">
+        </div>
+      </div>
+
+      <!-- Event 6 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="primed.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+
+       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="aptitudetest.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="1.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="2.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="3.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="4.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="5.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="6.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="7.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="8.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-media">
+          <img src="9.jpeg" class="img-fluid rounded shadow" alt="IEEE Activities">
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Video 2 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="event-media">
+          <video autoplay muted loop playsinline class="img-fluid rounded shadow">
+            <source src="pixel.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /events Section -->
+
        
 
     <!-- Contact Section -->
+     
     <section id="contact" class="contact section light-background">
 
       <!-- Section Title -->
@@ -1314,10 +1601,9 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 g-lg-5">
+        <div class="row g-4 g-lg-5 justify-content-center">
           <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box text-center" data-aos="fade-up" data-aos-delay="200">
               <h3>Contact Info</h3>
               <p>Feel free to reach out for collaborations or queries.</p>
 
@@ -1327,8 +1613,10 @@
                 </div>
                 <div class="content">
                   <h4>Our Location</h4>
-                  <p>NMAMIT</p>
-                  <p>karkala</p>
+                  <p> NMAMIT IEEE SB </p>
+                  <p>NMAM Institute of Technology,</p>
+                  <p>Nitte, Karnataka 574110</p>
+                
                 </div>
               </div>
 
@@ -1349,53 +1637,17 @@
                 </div>
                 <div class="content">
                   <h4>Email Address</h4>
-                  <p>Kishankalandoor@ieee.org</p>
+                  <p>Branch Counselor :   <a href="mailto:vasudeva77@ieee.org">vasudeva77@ieee.org</a></p>
+                  <p>Chair Person : <a href="mailto:Kishankalandoor@ieee.org">Kishankalandoor@ieee.org</a></p>
+
+             
                   <!--<p>contact@example.com</p> !-->
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-7">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Get In Touch</h3>
-              <p>Let us know how we can help you. We aim to respond within 24 hours.</p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                <div class="row gy-4">
-
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-
-                </div>
-              </form>
-
-            </div>
-          </div>
-
         </div>
-
+      </div>
       </div>
 
     </section><!-- /Contact Section -->
@@ -1477,7 +1729,7 @@ s <span>All Rights Reserved</span></p>
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by IEEE NMAMIT SB </a>
       </div>
     </div>
 
